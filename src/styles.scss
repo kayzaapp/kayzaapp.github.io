@@ -1,0 +1,25 @@
+/* Bootstrap SCSS entrypoint */
+
+// Project variable overrides in a separate file
+@use "./_bootstrap-variables" as *;
+
+@use "bootstrap/scss/bootstrap" with (
+  $primary: $primary,
+  $secondary: $secondary,
+  $success: $success,
+  $info: $info,
+  $warning: $warning,
+  $danger: $danger,
+  $body-bg: $body-bg,
+  $body-color: $body-color,
+  $font-family-sans-serif: $font-family-sans-serif,
+  $border-radius: $border-radius,
+  $headings-font-weight: $headings-font-weight,
+  $enable-shadows: $enable-shadows,
+  $enable-transitions: $enable-transitions
+);
+
+// App-specific styles
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
