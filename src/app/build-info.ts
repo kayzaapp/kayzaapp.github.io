@@ -6,6 +6,6 @@ export interface BuildInfo {
 
 export const BUILD_INFO: BuildInfo = {
   "version": "1.0.0",
-  "gitCommit": "26879e2",
+  "gitCommit": "930e34b",
   "gitTag": ""
 };

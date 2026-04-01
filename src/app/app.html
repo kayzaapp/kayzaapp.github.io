@@ -17,9 +17,9 @@
 						[class.btn-outline-primary]="activeSection() !== 'os-for-life'"
 						href="#os-for-life">Operating System for Life</a>
 					<a class="btn btn-sm"
-						[class.btn-primary]="activeSection() === 'utilities'"
-						[class.btn-outline-primary]="activeSection() !== 'utilities'"
-						href="#utilities">Utilities</a>
+						[class.btn-primary]="activeSection() === 'projects'"
+						[class.btn-outline-primary]="activeSection() !== 'projects'"
+						href="#projects">Projects</a>
 					<a class="btn btn-sm"
 						[class.btn-primary]="activeSection() === 'repos'"
 						[class.btn-outline-primary]="activeSection() !== 'repos'"
@@ -40,7 +40,7 @@
 				</p>
 				<div class="d-flex flex-wrap gap-2">
 					<a class="btn btn-primary" href="#contact">Contact Us</a>
-					<a class="btn btn-outline-secondary" href="#utilities">Explore Utilities</a>
+					<a class="btn btn-outline-secondary" href="#projects">Explore Projects</a>
 				</div>
 			</section>
 
@@ -75,22 +75,25 @@
 				</p>
 			</section>
 
-			<section id="utilities" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
-				<h2 class="h4 mb-3">Utilities</h2>
-				<p class="text-body-secondary mb-4">Access practical tools including ADO capabilities and custom software utilities.</p>
+			<section id="projects" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<h2 class="h4 mb-3">Projects</h2>
+				<p class="text-body-secondary mb-4">Current work focused on practical systems, reporting, and workflow acceleration.</p>
 				<div class="row g-3">
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-lg-6">
 						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
-							<h3 class="h6 mb-2">ADO Tools</h3>
-							<p class="mb-3 text-body-secondary">Insights, reporting, and workflow accelerators for Azure DevOps teams.</p>
-							<a class="btn btn-sm btn-outline-primary" href="https://github.com/kayzaapp/ado-boards-insights" target="_blank" rel="noopener noreferrer">Open ADO tools</a>
-						</div>
-					</div>
-					<div class="col-12 col-md-6">
-						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
-							<h3 class="h6 mb-2">Custom Software</h3>
-							<p class="mb-3 text-body-secondary">Purpose-built utilities tailored to your team's operating model.</p>
-							<a class="btn btn-sm btn-outline-primary" href="#">Explore custom software</a>
+							<p class="small text-uppercase fw-semibold text-primary mb-2">Featured Project</p>
+							<h3 class="h5 mb-2">ADO Boards Insights</h3>
+							<p class="mb-3 text-body-secondary">A reporting and insights project for Azure DevOps Boards teams that need clearer visibility into delivery trends and workflow health.</p>
+							<div class="d-flex flex-wrap gap-2">
+								<a
+									class="btn btn-sm btn-outline-primary"
+									href="https://github.com/kayzaapp/ado-boards-insights"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View project
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
