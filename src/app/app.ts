@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { FooterComponent } from './footer/footer';
 
@@ -10,5 +10,4 @@ import { FooterComponent } from './footer/footer';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App {
-  protected readonly title = signal('kayzaapp');
 }
