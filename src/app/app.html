@@ -1,11 +1,142 @@
 <div class="d-flex min-vh-100 flex-column bg-body-tertiary">
+	<header class="sticky-top border-bottom bg-body">
+		<div class="container py-3">
+			<nav class="navbar navbar-expand-md p-0" aria-label="Primary navigation">
+				<a class="navbar-brand fw-semibold" href="#home">Kayza</a>
+				<div class="d-flex flex-wrap gap-2 ms-md-auto">
+					<a class="btn btn-sm"
+						[class.btn-primary]="activeSection() === 'home'"
+						[class.btn-outline-primary]="activeSection() !== 'home'"
+						href="#home">Home</a>
+					<a class="btn btn-sm"
+						[class.btn-primary]="activeSection() === 'why-kayza'"
+						[class.btn-outline-primary]="activeSection() !== 'why-kayza'"
+						href="#why-kayza">Why Kayza</a>
+					<a class="btn btn-sm"
+						[class.btn-primary]="activeSection() === 'os-for-life'"
+						[class.btn-outline-primary]="activeSection() !== 'os-for-life'"
+						href="#os-for-life">Operating System for Life</a>
+					<a class="btn btn-sm"
+						[class.btn-primary]="activeSection() === 'utilities'"
+						[class.btn-outline-primary]="activeSection() !== 'utilities'"
+						href="#utilities">Utilities</a>
+					<a class="btn btn-sm"
+						[class.btn-primary]="activeSection() === 'repos'"
+						[class.btn-outline-primary]="activeSection() !== 'repos'"
+						href="#repos">Repos</a>
+					<a class="btn btn-sm btn-primary" href="#contact">Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
 	<main class="flex-grow-1">
 		<div class="container py-5">
-			<section class="rounded-4 border bg-body p-4 p-md-5 shadow-sm">
-				<h1 class="h3 mb-3">Kayza App</h1>
-				<p class="mb-0 text-body-secondary">
-					Bootstrap utilities are active and this layout is ready for feature sections.
+			<section id="home" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<p class="text-uppercase small fw-semibold text-primary mb-2">Welcome to Kayza</p>
+				<h1 class="display-6 fw-semibold mb-3">Kayza is the operating system for life.</h1>
+				<p class="lead text-body-secondary mb-4">
+					Organize daily priorities, track meaningful progress, and bring your tools into one connected operating layer for work and life.
 				</p>
+				<div class="d-flex flex-wrap gap-2">
+					<a class="btn btn-primary" href="#contact">Contact Us</a>
+					<a class="btn btn-outline-secondary" href="#utilities">Explore Utilities</a>
+				</div>
+			</section>
+
+			<section id="why-kayza" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<h2 class="h4 mb-3">Why Kayza</h2>
+				<div class="row g-3">
+					<div class="col-12 col-md-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Unified workflows</h3>
+							<p class="mb-0 text-body-secondary">Bring tasks, insights, and utilities together in one consistent operating surface.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Decision clarity</h3>
+							<p class="mb-0 text-body-secondary">Use practical dashboards and focused views to reduce noise and improve execution.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Built for growth</h3>
+							<p class="mb-0 text-body-secondary">Start simple today and scale with utilities and custom software as your needs evolve.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="os-for-life" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<h2 class="h4 mb-3">Operating System for Life</h2>
+				<p class="text-body-secondary mb-0">
+					Kayza connects planning, action, and reflection so you can run your personal and professional systems with intention, consistency, and momentum.
+				</p>
+			</section>
+
+			<section id="utilities" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<h2 class="h4 mb-3">Utilities</h2>
+				<p class="text-body-secondary mb-4">Access practical tools including ADO capabilities and custom software utilities.</p>
+				<div class="row g-3">
+					<div class="col-12 col-md-6">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">ADO Tools</h3>
+							<p class="mb-3 text-body-secondary">Insights, reporting, and workflow accelerators for Azure DevOps teams.</p>
+							<a class="btn btn-sm btn-outline-primary" href="https://github.com/kayzaapp/ado-boards-insights" target="_blank" rel="noopener noreferrer">Open ADO tools</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Custom Software</h3>
+							<p class="mb-3 text-body-secondary">Purpose-built utilities tailored to your team's operating model.</p>
+							<a class="btn btn-sm btn-outline-primary" href="#">Explore custom software</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="repos" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<h2 class="h4 mb-3">Repository Links</h2>
+				<p class="text-body-secondary mb-4">Featured and upcoming repositories powering the Kayza utility ecosystem.</p>
+				<div class="row g-3">
+					<div class="col-12 col-lg-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">ADO Boards Insights</h3>
+							<p class="mb-3 text-body-secondary">Analytics and insight tooling for Azure DevOps Boards.</p>
+							<a
+								class="btn btn-sm btn-outline-primary"
+								href="https://github.com/kayzaapp/ado-boards-insights"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								View repository
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Next Utility Repo</h3>
+							<p class="mb-3 text-body-secondary">Reserved space for your next public utility repository.</p>
+							<a class="btn btn-sm btn-outline-secondary disabled" href="#" aria-disabled="true">Coming soon</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="h-100 rounded-3 border p-3 bg-body-tertiary">
+							<h3 class="h6 mb-2">Future Platform Repo</h3>
+							<p class="mb-3 text-body-secondary">Additional space for future platform and integration projects.</p>
+							<a class="btn btn-sm btn-outline-secondary disabled" href="#" aria-disabled="true">Coming soon</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section-anchor rounded-4 border bg-body p-4 p-md-5">
+				<h2 class="h4 mb-3">Contact</h2>
+				<p class="text-body-secondary mb-4">
+					Want to bring Kayza into your workflow? Reach out and we will help you map the right utility stack.
+				</p>
+				<a class="btn btn-primary" href="mailto:hello@kayza.app">Contact Us</a>
 			</section>
 		</div>
 	</main>
