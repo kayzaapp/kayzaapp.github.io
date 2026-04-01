@@ -1,9 +1,11 @@
 {
   "name": "kayzaapp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
+    "prestart": "node scripts/generate-build-info.mjs",
     "start": "npx ng serve --host 0.0.0.0 --port 4200",
+    "prebuild": "node scripts/generate-build-info.mjs",
     "build": "npx ng build --configuration production --base-href /",
     "watch": "npx ng build --watch --configuration development",
     "test": "npx ng test"
