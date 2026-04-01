@@ -10,7 +10,7 @@ describe('FooterComponent', () => {
     }).compileComponents();
   });
 
-  it('should render version and git reference', () => {
+  it('should render version and commit reference', () => {
     const fixture = TestBed.createComponent(FooterComponent);
     fixture.detectChanges();
 
@@ -21,6 +21,6 @@ describe('FooterComponent', () => {
       : BUILD_INFO.gitCommit;
 
     expect(text).toContain(`Version ${BUILD_INFO.version}`);
-    expect(text).toContain(`Git ${expectedRef}`);
+    expect(text).toContain(`Commit ${expectedRef}`);
   });
 });
