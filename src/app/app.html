@@ -2,7 +2,10 @@
 	<header class="sticky-top border-bottom bg-body">
 		<div class="container py-3">
 			<nav class="navbar navbar-expand-md p-0" aria-label="Primary navigation">
-				<a class="navbar-brand fw-semibold" href="#home">Kayza</a>
+				<a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#home">
+					<img src="logo.svg" alt="" width="32" height="32">
+					<span>Kayza</span>
+				</a>
 				<div class="d-flex flex-wrap gap-2 ms-md-auto">
 					<a class="btn btn-sm"
 						[class.btn-primary]="activeSection() === 'home'"
@@ -33,6 +36,7 @@
 	<main class="flex-grow-1">
 		<div class="container py-5">
 			<section id="home" class="section-anchor rounded-4 border bg-body p-4 p-md-5 mb-4">
+				<img class="hero-logo mb-4" src="logo.svg" alt="Kayza logo" width="96" height="96">
 				<p class="text-uppercase small fw-semibold text-primary mb-2">Welcome to Kayza</p>
 				<h1 class="display-6 fw-semibold mb-3">Kayza is the operating system for life.</h1>
 				<p class="lead text-body-secondary mb-4">
