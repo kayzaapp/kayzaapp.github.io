@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><clipPath id="c"><rect x="52" y="26" width="70" height="76"/></clipPath></defs>
-<rect width="128" height="128" rx="28" fill="#0f172a"/>
-<rect x="30" y="26" width="22" height="76" fill="#4f46e5"/>
-<g clip-path="url(#c)" fill="none" stroke-width="24">
-<path d="M66 56L130 120" stroke="#c084fc"/>
-<path d="M36 86L112 10" stroke="#9333ea"/></g></svg>
