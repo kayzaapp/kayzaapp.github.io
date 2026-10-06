@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-<symbol id="kayza-logo" viewBox="0 0 128 128"><defs><clipPath id="kayza-clip"><rect x="52" y="26" width="76" height="76"/></clipPath></defs>
-<rect width="128" height="128" rx="28" fill="#0f172a"/>
-<g transform="translate(-0.5 8.9) scale(.85)">
-<rect x="30" y="26" width="22" height="76" fill="#4f46e5"/>
-<g clip-path="url(#kayza-clip)" fill="none" stroke-width="22">
-<path d="M66 56L130 120" stroke="#c084fc"/>
-<path d="M36 86L112 10" stroke="#9333ea"/></g></g></symbol>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 128">
+<symbol id="kayza-dark" viewBox="0 0 128 128"><rect width="128" height="128" rx="28" fill="#0f172a"/><g transform="translate(19.24 102) scale(0.05090 -0.05090)"><polygon points="188,1493 573,1493 573,948 1128,1493 1575,1493 856,786 1649,0 1167,0 573,588 573,0 188,0" fill="#c084fc"/><polygon points="573,948 1128,1493 1575,1493 856,786 573,588" fill="#9333ea"/><rect x="188" y="0" width="385" height="1493" fill="#4f46e5"/></g></symbol>
+<symbol id="kayza-light" viewBox="0 0 128 128"><rect x="2" y="2" width="124" height="124" rx="28" fill="#fff" stroke="#cbd5e1" stroke-width="3"/><g transform="translate(19.24 102) scale(0.05090 -0.05090)"><polygon points="188,1493 573,1493 573,948 1128,1493 1575,1493 856,786 1649,0 1167,0 573,588 573,0 188,0" fill="#c084fc"/><polygon points="573,948 1128,1493 1575,1493 856,786 573,588" fill="#9333ea"/><rect x="188" y="0" width="385" height="1493" fill="#4f46e5"/></g></symbol>
+<view id="dark" viewBox="0 0 128 128"/>
+<view id="light" viewBox="128 0 128 128"/>
+<use href="#kayza-dark" x="0" y="0" width="128" height="128"/>
+<use href="#kayza-light" x="128" y="0" width="128" height="128"/>
 </svg>
