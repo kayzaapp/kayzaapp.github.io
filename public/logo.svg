@@ -2,6 +2,6 @@
 <rect width="128" height="128" rx="28" fill="#0f172a"/>
 <g transform="translate(-0.5 8.9) scale(.85)">
 <rect x="30" y="26" width="22" height="76" fill="#4f46e5"/>
-<g clip-path="url(#c)" fill="none" stroke-width="24">
+<g clip-path="url(#c)" fill="none" stroke-width="22">
 <path d="M66 56L130 120" stroke="#c084fc"/>
 <path d="M36 86L112 10" stroke="#9333ea"/></g></g></svg>
